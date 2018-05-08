@@ -1,0 +1,35 @@
+{
+	"version": "1.1.0",
+	"content_scripts": [ {
+		"js": [
+			"contentscript.js"
+		],
+		"css": [
+			"style.css"
+		],
+		"matches": [
+			"*://*.nowplayer.now.com/*",
+			"*://nowplayer.now.com/*"
+		],
+		"run_at": "document_start"
+	} ],
+	"background": {
+		"scripts": ["event.js"],
+		"persistent": true
+	},
+	"web_accessible_resources": [
+		"*.js"
+	],
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	],
+	"manifest_version": 2,
+	"name": "NowPlayer Extension",
+	"description": "NowPlayer Extension is an extension which let you watch content on nowplayer.now.com in Chrome or Firefox.",
+	"icons": {
+		"128": "icon128.png"
+	},
+	"homepage_url": "https://www.alvinhkh.com/"
+}
