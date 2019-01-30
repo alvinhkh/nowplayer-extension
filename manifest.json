@@ -1,0 +1,23 @@
+{
+	"version": "2.0.1",
+	"content_scripts": [ {
+		"js": [
+			"contentscript.js"
+		],
+		"css": [
+			"style.css"
+		],
+		"matches": [
+			"*://*.nowplayer.now.com/*",
+			"*://nowplayer.now.com/*"
+		],
+		"run_at": "document_start"
+	} ],
+	"manifest_version": 2,
+	"name": "NowPlayer Extension",
+	"description": "Extension for nowplayer.now.com",
+	"icons": {
+		"128": "icon128.png"
+	},
+	"homepage_url": "https://www.alvinhkh.com/"
+}
